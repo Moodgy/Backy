@@ -362,6 +362,24 @@ h2 {
 #efficiency-table tr:hover {
     background-color: #f1f1f1;
 }
+#efficiency-table tr {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 0.5s;
+}
+
+#efficiency-table tr:nth-child(1) {
+    animation-delay: 1s;
+}
+
+#efficiency-table tr:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+#efficiency-table tr:nth-child(3) {
+    animation-delay: 2s;
+}
+
 
 /* Charging Simulation */
 #charging-simulation {
