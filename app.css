@@ -426,3 +426,105 @@ h2 {
         width: 100%;
     }
 }
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h2 {
+    color: #2e0cfc;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.battery-table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s 0.5s forwards;
+}
+
+.battery-table th, .battery-table td {
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.battery-table th {
+    background-color: #2e0cfc;
+    color: white;
+    font-weight: bold;
+}
+
+.battery-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.battery-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .battery-table {
+        width: 100%;
+    }
+}
+
+/* Add to app.css */
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Table Rows Fade-In Animation */
+.battery-table tr {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 0.5s;
+}
+
+.battery-table tr:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.battery-table tr:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+.battery-table tr:nth-child(3) {
+    animation-delay: 2s;
+}
